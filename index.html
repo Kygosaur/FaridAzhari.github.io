@@ -18,9 +18,10 @@
       document.body.appendChild(renderer.domElement);
 
       var loader = new THREE.GLTFLoader();
-      loader.load('name', function(gltf) {
-          scene.add(gltf.scene);
+      loader.load('https://raw.githubusercontent.com/kygosaur/FaridAzhari.github.io/main/platformer_rabbit_copy.glb', function(gltf) {
+        scene.add(gltf.scene);
       });
+       
 
       camera.position.z = 5;
 
@@ -32,3 +33,5 @@
   </script>
 </body>
 </html>
+
+
